@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Adventures!</title>
+  </head>
+  <body>
+
+<h1>Number Guessing Game</h1>    
+Type a number between 1 and 100 (then press guess)
+<input id="guess" type="text">
+<input type="button" value="guess" onClick="guessOne()"/>
+<p id="message">&nbsp;</p>
+
+<script>
+var guessCount = 0;
+var MAX_GUESSES = 6;
+var randomNumber = Math.floor((Math.random() * 100) + 1); //picks a random number between 1 and 100
+
+function guessOne(){
+
+     // Get a guess from the player
+  var guess = document.getElementById("guess").value;
+
+  if (guess == randomNumber){
+    document.getElementById("message").innerHTML= "It took you " +guessCount+ " guesses";
+    return;  // prevents saying 'ran out' if guessed in last round
+  } else if (guess < randomNumber){
+    document.getElementById("message").innerHTML= "Guess again. The number is higher than "+guess;
+  } else {
+    document.getElementById("message").innerHTML= "Guess again. The number is lower than "+guess;
+  }
+  guessCount += 1;
+    if (guessCount >= MAX_GUESSES) {
+    document.getElementById("message").innerHTML= "Sorry, you ran out of guesses.  The number was " + randomNumber;
+  }
+
+  // Lend a hand by clearing out their last guess
+  document.getElementById("guess").value = "";  
+}    
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,162 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-color: #4aaaa5;
+    margin-top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: gray;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+    background-color:#4aaaa5;
+}
+
+.active {
+    background-color:#4aaaa5;
+}
+
+body {
+  max-width: 1500px;
+}
+
+#bio {
+
+  clear:both;
+  overflow:auto;
+  background: lightgray;
+  width: 100%;
+  float: none;
+  background-position: relative;
+  height:600px;
+}
+
+.About-Me {
+    background-color: white;
+    width: 400px;
+    border: 5px #4aaaa5;
+    padding: 25px;
+    margin: 25px;
+    position:relative;
+    height:350px;
+    color: #4aaaa5;
+}
+
+.Contact {
+    background-color: white;
+    width: 300px;
+    border: 5px #4aaaa5;
+    padding: 25px;
+    margin: 25px;
+    position: relative;
+    left:600px;
+    bottom: 450px;
+    text-align: center;
+    color:#4aaaa5;
+
+
+}
+
+footer {
+
+  background-color: #666666;
+  text-align: center;
+  height: 100px;
+  font-size:20px;
+  position: absolute;
+  color:white;
+  bottom:0;
+  border-top-style: solid;
+  border-top-width: 5px;
+  border-color: #4aaaa5;
+  width:100%;
+}
+
+.image {
+  position:relative;
+}
+
+.text {
+  position:relative;
+}
+
+.active {
+  margin-left:50px;
+  color:white;
+}
+
+
+
+.All {
+  margin-right: 600px;
+  color:gray;
+}
+
+.text {
+  color: black;
+}
+
+.Touch {
+    background-color: white;
+    width: 475px;
+    border: 5px #4aaaa5;
+    padding: 25px;
+    margin: 25px;
+    position:relative;
+    height:375px;
+    color: #4aaaa5;
+}
+
+.button {
+    background-color: #4aaaa5; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.resume {
+    background-color: white;
+    width: 475px;
+    border: 5px #4aaaa5;
+    padding: 25px;
+    margin: 25px;
+    position:relative;
+    height:375px;
+    color: #4aaaa5;
+}
+
+.image2 {
+    margin-left: 300px;
+    margin-top: -100px;
+
+}
+
+.image3 {
+  margin-left:-300px;
+  margin-top: 100px;
+
+}
+
+.image4 {
+  margin-left: 300px;
+  margin-top: -100px;
+}
